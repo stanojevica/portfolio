@@ -1,0 +1,356 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+$bojaS:#f4f4f4;
+$bojaT:#080c07;
+$bojaLink:#df554a;
+body{
+	font-family: 'Fira Sans', sans-serif;
+}
+html{
+	scroll-behavior:smooth;
+}
+a{
+	text-decoration:none;
+	color:$bojaLink;
+}
+header{
+	background:url(../pictures/cover4.jpg);
+	background-size:cover;
+	background-position:center;
+	width:100%;
+	height:100vh;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	nav {
+		width:100%;
+		display:flex;
+		justify-content:center;;
+		ul{
+		display:flex;
+		justify-content:space-between;
+		list-style-type:none;
+		margin-top:3vh;
+		margin-left:25vh;
+		transform: rotate(4deg);
+		color:$bojaT;
+		}
+		li{
+			margin-left:1.8vw;
+			a{
+				font-size:1.9vw;
+				color:black;
+				font-weight:bold;
+			}
+			a:hover{
+				color:$bojaS;
+			}
+		}
+		#bars{
+			margin-top:30px;
+			margin-right:-88vw;
+			transform: rotate(4deg);
+			a{
+				margin-right:20px;
+				font-size:35px;
+				color:$bojaT;
+			}
+			a:hover{
+				color:$bojaS;
+			}
+			display:none;
+			#navbarmin{
+				transform:rotate(-4deg);
+				position:fixed;
+				top:0;
+				right:0;
+				z-index:1;
+				display:none;
+				ul{
+					list-style-type:none;
+					display:flex;
+					flex-direction:column;
+					width:120px;
+					margin-right:-20px;
+					margin-top:40px;
+					li{
+						a{
+							text-decoration:none;
+							font-size:15px;
+							text-wrap:normal;
+						}
+					}
+				}
+			}
+			#navbarmin:target{
+				display:block;
+			}
+		}
+	}
+	#logo{
+		margin-top:2px;
+		margin-left:-26vh;
+		transform: rotate(4deg);
+		position:relative;
+		animation-name: animacija2;
+		animation-duration: 3s;
+		animation-fill-mode: forwards;
+	}
+	#title{
+		width:27%;
+		height:13%;
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		transform: rotate(6.5deg);
+		font-size:1.5vw;
+		h1{
+			margin-bottom:3px;
+			position:relative;
+			animation-name: animacija;
+			animation-duration: 3s;
+			animation-fill-mode: forwards;
+		}
+		h2{
+			position:relative;
+			animation-name: animacija1;
+			animation-duration: 3s;
+			animation-fill-mode: forwards;
+		}
+	}
+	#arrow{
+		width:100%;
+		a{
+			font-size:30px;
+			position:fixed;
+			right:8px;
+			top:93%;
+			z-index:1;
+		}
+	}
+}
+@keyframes animacija {
+    from {top: 0px;left:-500px;}
+    to {top: 0px;left:0px;}
+}
+@keyframes animacija1 {
+    from {top: 0px;right:-500px;}
+    to {top: 0px;right:0px;}
+}
+@keyframes animacija2 {
+    from {top: -500px;left:0px;}
+    to {top: 0px;left:0px;}
+}
+.information{
+	min-height:100vh;
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	.title1{
+		font-size:5vh;
+		margin-top:4%;
+	}
+	.content{
+		width:80%;
+		margin-top:6%;
+		display:flex;
+		justify-content:space-between;
+		font-size:5vh;
+	}
+}
+#about{
+	.text{
+		width:50%;
+		font-size:2vw;
+		color:$bojaS;
+	}
+	.picture {
+		width:30%;
+		img{
+		border-radius:8%;
+		width:100%;
+		}
+	}
+}
+#portfolio{
+	.content{
+		.text{
+			width:100%;
+		}
+		.skils{
+			margin-bottom:5vh;
+			width:100%;
+			height:80px;
+			border-radius:20px;
+			display:flex;
+			align-items:center;
+			justify-content:space-between;
+			color:$bojaS;
+			p{
+				margin: 0px 10px 0px 10px;
+			}
+			p:last-child{
+					color:$bojaLink;
+				}
+		}
+		#html{
+			width:80%;
+			background:$bojaT;
+		}
+		#css{
+			width:75%;
+			background:$bojaT;
+		}
+		#ps{
+			width:60%;
+			background:$bojaT;
+		}
+		#drawing{
+			width:90%;
+			background:$bojaT;
+		}
+	}
+}
+#whatido{
+	.content{
+		flex-direction:column;
+		color:$bojaS;
+		font-size:18px;
+		.works{
+			width:100%;
+			display:flex;
+			justify-content:space-between;
+			flex-wrap:wrap;
+			margin-bottom:25px;
+			.work{
+				width:30%;
+				text-align:center;
+				filter: grayscale(100%);
+				word-wrap: break-word;
+				img{
+					width:100%;	
+				}
+			}
+			.work:hover{
+				filter:none;
+			}
+		}
+		#worksend{
+			align-items:flex-end;
+		}
+	}
+	.works__lightboxes{
+		.work__lightbox{
+			position:fixed;
+			top:0;
+			left:0;
+			width:100vw;
+			height:100vh;
+			background: rgba(0,0,0,0.5);
+			display:none;
+			align-items:center;
+			justify-content:center;
+			.lightbox__content{
+				background:$bojaT;
+				width:60%;
+				padding:15px;
+				position:relative;
+				font-size:25px;
+				text-align:center;
+				img{
+					width:100%;
+				}
+				.close{
+					position:absolute;
+					width:20px;
+					height:20px;
+					background-color:$bojaLink;
+					top:-1em;
+					right:-1em;
+					border-radius:50%;
+					color:$bojaT;
+					text-transform:uppercase;
+					display:flex;
+					justify-content:center;
+					align-items:center;
+					font-weight:bold;
+					font-size:15px;
+				}
+				.before, .next{
+					position:absolute;
+					top:50%;
+					font-size:50px;
+					}
+				.before{
+					left:-1em;
+				}
+				.next{
+					right:-1em;
+				}
+			}
+		}
+		.work__lightbox:target{
+			display:flex;
+		}
+	}
+}
+#about,#whatido,footer{
+	background:$bojaT;
+	h3{
+		color:$bojaS;
+	}
+}
+#portfolio,#contact{
+	background:$bojaS;
+	h3{
+		color:$bojaT;
+	}
+}
+#contact{
+	.content{
+		justify-content:center;
+	}
+	form table tbody tr{
+		display:flex;
+		flex-direction:column;
+		text-align:center;
+		font-size:4vh;
+		td{
+			margin-bottom:2vh;
+			input,textarea{
+				border: none;
+				border-bottom: 1px solid $bojaT;
+				width:600px;
+				background-color:$bojaS;
+			}
+			textarea{
+				margin-top:20px;
+			}
+			input[type="submit"]{
+				width:100px;
+				height:40px;
+				border-bottom:none;
+				border-radius:25px;
+				background-color:$bojaT;
+				text-transform:uppercase;
+				color:$bojaLink;
+				font-size:20px;
+			}
+		}
+	}
+}
+footer{
+	min-height:8vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	color:$bojaLink;
+	div{
+		margin-top:2px;
+	}
+}

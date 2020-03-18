@@ -1,0 +1,255 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+@media screen and (max-width: 1440px) {
+  header {
+    padding-top: 9vh; } }
+@media screen and (max-width: 1370px) {
+  header {
+    padding-top: 0px; } }
+@media screen and (max-width: 1200px) {
+  header {
+    background: url(../pictures/cover1.jpg);
+    background-size: cover;
+    background-position: center; }
+    header nav ul {
+      margin-left: 26vh; }
+      header nav ul li a {
+        font-size: 25px; } }
+@media screen and (max-width: 992px) {
+  header {
+    background: url(../pictures/cover5.jpg);
+    background-size: cover;
+    background-position: center; }
+    header #title {
+      width: 38%; }
+
+  @keyframes animacija {
+    from {
+      top: 0px;
+      right: -500px; }
+    to {
+      top: 0px;
+      right: 0px; } }
+  @keyframes animacija1 {
+    from {
+      top: 0px;
+      left: -500px; }
+    to {
+      top: 0px;
+      left: 0px; } }
+  @keyframes animacija2 {
+    from {
+      bottom: -1000px;
+      left: 0px; }
+    to {
+      bottom: 0px;
+      left: 0px; } }
+  #about .content {
+    display: flex;
+    flex-direction: row-reverse; }
+    #about .content .text {
+      font-size: 22px; }
+
+  #portfolio .content .text #html, #portfolio .content .text #css, #portfolio .content .text #ps, #portfolio .content .text #drawing {
+    background-color: #df554a; }
+    #portfolio .content .text #html p, #portfolio .content .text #css p, #portfolio .content .text #ps p, #portfolio .content .text #drawing p {
+      color: #080c07; }
+    #portfolio .content .text #html p:last-child, #portfolio .content .text #css p:last-child, #portfolio .content .text #ps p:last-child, #portfolio .content .text #drawing p:last-child {
+      color: #d5e4e8; }
+
+  #whatido .content {
+    flex-direction: row; }
+    #whatido .content .works {
+      flex-direction: column;
+      width: 50%; }
+      #whatido .content .works .work {
+        width: 85%;
+        margin-bottom: 20px; }
+
+  #contact form table tbody tr td input, #contact form table tbody tr td textarea {
+    border-bottom: 3px solid #df554a;
+    width: 500px; }
+  #contact form table tbody tr td input[type="submit"] {
+    background-color: #df554a;
+    color: #080c07;
+    width: 130px; } }
+@media screen and (max-width: 768px) {
+  header {
+    background: url(../pictures/cover6.jpg);
+    background-size: cover;
+    background-position: center; }
+    header nav #navbar {
+      display: none; }
+    header nav #bars {
+      display: block; }
+    header #logo {
+      margin-top: -65px;
+      margin-left: -190px; }
+    header #title {
+      margin-top: 50px;
+      margin-left: -150px;
+      font-size: 3vw; }
+
+  #about .content {
+    flex-direction: column;
+    align-items: center; }
+    #about .content .text {
+      width: 100%;
+      margin-bottom: 20px; }
+    #about .content .picture {
+      width: 50%; }
+
+  #portfolio .content {
+    min-height: 80vh; }
+    #portfolio .content .text {
+      height: 80vh;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end; }
+      #portfolio .content .text .skils {
+        margin-bottom: 2vh;
+        width: 10px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column-reverse; }
+        #portfolio .content .text .skils p {
+          margin: 0px;
+          transform: rotate(270deg); }
+        #portfolio .content .text .skils p:last-child {
+          margin-top: 19px;
+          color: #d5e4e8; }
+      #portfolio .content .text #html {
+        height: 80%;
+        width: 20%;
+        background-color: #080c07; }
+        #portfolio .content .text #html p {
+          margin-bottom: 4vh;
+          color: #df554a; }
+      #portfolio .content .text #css {
+        height: 75%;
+        width: 20%;
+        background-color: #080c07; }
+        #portfolio .content .text #css p {
+          margin-bottom: 2vh;
+          color: #df554a; }
+      #portfolio .content .text #ps {
+        height: 60%;
+        width: 20%;
+        background-color: #080c07; }
+        #portfolio .content .text #ps p {
+          margin-bottom: 12vh;
+          color: #df554a; }
+      #portfolio .content .text #drawing {
+        height: 90%;
+        width: 20%;
+        background-color: #080c07; }
+        #portfolio .content .text #drawing p {
+          margin-bottom: 8.5vh;
+          color: #df554a; }
+
+  #whatido .content {
+    font-size: 2.2vw; }
+    #whatido .content .works .work {
+      filter: none; }
+
+  #contact form table tbody tr td input, #contact form table tbody tr td textarea {
+    border-bottom: 1px solid #080c07;
+    width: 500px; }
+  #contact form table tbody tr td input[type="submit"] {
+    background-color: #df554a;
+    color: #080c07;
+    width: 150px;
+    border: none; }
+  #contact form table tbody tr td textarea {
+    height: 100px; }
+  #contact tr:nth-child(2) {
+    display: none; } }
+@media screen and (max-width: 480px) {
+  header {
+    background: #df554a; }
+    header nav #bars {
+      margin: 0px;
+      margin-left: 90%;
+      transform: rotate(0deg); }
+      header nav #bars #navbarmin {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        transform: rotate(0deg); }
+        header nav #bars #navbarmin ul {
+          transform: rotate(0deg);
+          width: 80%;
+          height: 100%;
+          margin: 0px auto;
+          justify-content: space-around; }
+          header nav #bars #navbarmin ul li {
+            width: 100%;
+            text-align: center; }
+            header nav #bars #navbarmin ul li a {
+              font-size: 60px;
+              color: #d5e4e8; }
+    header #logo, header #title {
+      transform: none;
+      position: static; }
+    header #logo {
+      margin-top: 30px;
+      margin-left: 5vw; }
+      header #logo img {
+        width: 80vw; }
+    header #title {
+      width: 70%;
+      margin-left: 6vw;
+      font-size: 6vw; }
+      header #title h1, header #title h2 {
+        position: static; }
+
+  #about .content .picture {
+    display: none; }
+  #about .content .text {
+    margin-top: 35px;
+    font-size: 6.5vw; }
+
+  #portfolio .content .text {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    #portfolio .content .text .skils {
+      flex-direction: column;
+      border-radius: 50%;
+      justify-content: space-around;
+      font-size: 23px;
+      border: 2px solid #df554a; }
+      #portfolio .content .text .skils p {
+        transform: rotate(0deg); }
+    #portfolio .content .text #html, #portfolio .content .text #css, #portfolio .content .text #ps, #portfolio .content .text #drawing {
+      width: 165px;
+      height: 165px; }
+      #portfolio .content .text #html p, #portfolio .content .text #css p, #portfolio .content .text #ps p, #portfolio .content .text #drawing p {
+        margin: 0px; }
+
+  #whatido .content {
+    flex-direction: column;
+    font-size: 3.2vw; }
+    #whatido .content .works {
+      width: 100%; }
+      #whatido .content .works .work {
+        width: 100%; }
+    #whatido .content #worksend .work a {
+      display: none; }
+    #whatido .content .work__lightbox:target {
+      display: none; }
+
+  #contact .content {
+    padding-top: 80px; }
+  #contact form table tbody tr td input, #contact form table tbody tr td textarea {
+    width: 80vw; }
+  #contact form table tbody tr td input[type="submit"] {
+    width: 20vw;
+    font-size: 5vw; } }
+
+/*# sourceMappingURL=responsive.css.map */

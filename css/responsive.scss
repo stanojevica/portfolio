@@ -1,0 +1,368 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+$pink:#df554a;
+$dark:#080c07;
+$light:#d5e4e8;
+@media screen and(max-width:1440px){
+	header{
+		padding-top:9vh;
+	}
+}
+@media screen and(max-width:1370px){
+	header{
+		padding-top:0px;
+	}
+}
+@media screen and(max-width:1200px){
+	header{
+		background:url(../pictures/cover1.jpg);
+		background-size:cover;
+		background-position:center; 
+		nav{
+			ul{
+				margin-left:26vh;
+				li{
+					a{
+						font-size:25px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and(max-width:992px){
+	header{
+		background:url(../pictures/cover5.jpg);
+		background-size:cover;
+		background-position:center;
+		#title{
+			width:38%;
+		}
+	}
+	@keyframes animacija {
+		from {top: 0px;right:-500px;}
+		to {top: 0px;right:0px;}
+	}
+	@keyframes animacija1 {
+		from {top: 0px;left:-500px;}
+		to {top: 0px;left:0px;}
+	}
+	@keyframes animacija2 {
+		from {bottom: -1000px;left:0px;}
+		to {bottom: 0px;left:0px;}
+	}
+	#about {
+		.content{
+			display:flex;
+			flex-direction:row-reverse;
+			.text{
+			font-size:22px;
+			}
+		}
+	}
+	#portfolio{
+		.content{
+			.text{
+				#html,#css,#ps,#drawing{
+					background-color:$pink;
+					p{
+						color:$dark;
+					}
+					p:last-child{
+						color:$light;
+					}
+				}
+			}
+		}
+	}
+	#whatido{
+		.content{
+			flex-direction:row;
+			.works{
+				flex-direction:column;
+				width:50%;
+				.work{
+					width:85%;
+					margin-bottom:20px;
+				}
+			}
+		}
+	}
+	#contact{
+		form table tbody tr{
+			td{
+				input,textarea{
+					border-bottom:3px solid $pink;
+					width:500px;
+				}
+				input[type="submit"]{
+					background-color:$pink;
+					color:$dark;
+					width:130px;
+				}
+			}
+		}
+	}
+}
+@media screen and(max-width:768px){
+	header{
+		background:url(../pictures/cover6.jpg);
+		background-size:cover;
+		background-position:center;
+		nav{
+			#navbar{
+				display:none;
+			}
+			#bars{
+				display:block;
+			}
+		}
+		#logo{
+			margin-top:-65px;
+			margin-left:-190px;
+		}
+		#title{
+			margin-top:50px;
+			margin-left:-150px;
+			font-size:3vw;
+		}
+	}
+	#about{
+		.content{
+			flex-direction:column;
+			align-items:center;
+			.text{
+				width:100%;
+				margin-bottom:20px;
+			}
+			.picture{
+				width:50%;
+			}
+		}
+	}
+	#portfolio{
+		.content{
+			min-height:80vh;
+			.text{
+				height:80vh;
+				width:100%;
+				display:flex;
+				justify-content:space-between;
+				align-items:flex-end;
+				.skils{
+					margin-bottom:2vh;
+					width:10px;
+					border-radius:20px;
+					display:flex;
+					flex-direction:column-reverse;
+					
+					p{
+						margin:0px;
+						transform:rotate(270deg);
+					}
+					p:last-child{
+						margin-top:19px;
+						color:$light;
+					}
+				}
+				#html{
+					height:80%;
+					width:20%;
+					background-color:$dark;
+					p{
+					margin-bottom:4vh;
+					color:$pink;
+					}
+				}
+				#css{
+					height:75%;
+					width:20%;
+					background-color:$dark;
+					p{
+					margin-bottom:2vh;
+					color:$pink;
+					}
+				}
+				#ps{
+					height:60%;
+					width:20%;
+					background-color:$dark;
+					p{
+					margin-bottom:12vh;
+					color:$pink;
+					}
+				}
+				#drawing{
+					height:90%;
+					width:20%;
+					background-color:$dark;
+					p{
+						margin-bottom:8.5vh;
+						color:$pink;
+					}
+				}
+			}
+		}
+	}
+	#whatido{
+		.content{
+			font-size:2.2vw;
+			.works{
+				.work{
+					filter:none;
+				}
+			}
+		}
+	}
+	#contact{
+		form table tbody tr{
+			td{
+				input,textarea{
+					border-bottom:1px solid $dark;
+					width:500px;
+				}
+				input[type="submit"]{
+					background-color:$pink;
+					color:$dark;
+					width:150px;
+					border:none;
+				}
+				textarea{
+					height:100px;
+				}
+			}
+		}
+		tr:nth-child(2){
+			display:none;
+		}
+	}
+}
+@media screen and(max-width:480px){
+	header{
+		background:$pink;
+		nav{
+			#bars{
+				margin:0px;
+				margin-left:90%;
+				transform:rotate(0deg);
+				#navbarmin{
+					width:100vw;
+					height:100vh;
+					background-color:rgba(0,0,0,0.5);
+					transform:rotate(0deg);
+					ul{
+						transform:rotate(0deg);
+						width:80%;
+						height:100%;
+						margin:0px auto;
+						justify-content:space-around;
+						li{
+							width:100%;
+							text-align:center;
+							a{
+								font-size:60px;
+								color:$light;
+							}
+						}
+					}
+				}
+			}
+		}
+		#logo,#title{
+			transform:none;
+			position:static;
+		}
+		#logo{
+			margin-top:30px;
+			margin-left:5vw;
+			img{
+				width:80vw;
+			}
+		}
+		#title{
+			width:70%;
+			margin-left:6vw;
+			font-size:6vw;
+			h1,h2{
+				position:static;
+			}
+		}
+	}
+	#about{
+		.content{
+			.picture{
+				display:none;
+			}
+			.text{
+				margin-top:35px;
+				font-size:6.5vw;
+			}
+		}
+	}
+	#portfolio{
+		.content{
+			.text{
+				height:100%;
+				flex-direction:column;
+				justify-content:space-around;
+				align-items:center;
+				.skils{
+					flex-direction:column;
+					border-radius:50%;
+					justify-content:space-around;
+					font-size:23px;
+					border:2px solid $pink;
+					p{
+						transform:rotate(0deg);
+					}
+				}
+				#html,#css,#ps,#drawing{
+					width:165px;
+					height:165px;
+					p{
+						margin:0px;
+					}
+				}
+			}
+		}
+	}
+	#whatido{
+		.content{
+			flex-direction:column;
+			font-size:3.2vw;
+			.works{
+				width:100%;
+				.work{
+					width:100%;
+				}
+			}
+			#worksend{
+				.work{
+					a{
+						display:none;
+					}
+				}
+			}
+			.work__lightbox:target{
+				display:none;
+			}
+		}
+	}
+	#contact{
+		.content{
+			padding-top:80px;
+		}
+		form table tbody tr td{
+			input,textarea{
+				width:80vw;
+			}
+			input[type="submit"]{
+				width:20vw;
+				font-size:5vw;
+			}
+		}
+	}
+}

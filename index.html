@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Portfolio | Aleksandra Stanojevic </title>
+		<link rel="shorcut icon" href="pictures/logoico.ico"/>
+		<meta charset="utf-8"/>
+		<meta name="keywords" content="Portfolio,Aleksandra,Stanojevic,AleksandraStanojevic,Web Design, Web dizajn"/>
+		<meta name="description" content="Hi, I'm Aleksandra Stanojević and this is my portfolio. If you wont know more about me, clik and come to my web site."/>
+		<meta name="author" content="Aleksandra Stanojević"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+		integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous"/>
+		<link href="css/stylemin.css" type="text/css" rel="stylesheet"/>
+		<link href="css/responsivemin.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div id="navbar">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#about">About me</a></li>
+						<li><a href="#portfolio">My skils</a></li>
+						<li><a href="#whatido">My work</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+				<div id="bars">
+					<a href="#navbarmin"><i class="fas fa-bars"></i></a>
+					<div id="navbarmin">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#about">About me</a></li>
+							<li><a href="#portfolio">My skils</a></li>
+							<li><a href="#whatido">My work</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div id="logo">
+				<img src="pictures/logo1.png" alt="logo"/>
+			</div>
+			<div id="title">
+				<h1>Welcome</h1>
+				<h2>To my portfolio</h2>
+			</div>
+			<div id="arrow">
+				<a href="#"><i class="fas fa-arrow-up"></i></a>
+			</div>
+		</header>
+		<main>
+			<section class="information" id="about">
+				<article class="title1" >
+					<h3>About me</h3>
+				</article>
+				<article class="content">
+					<div class="text">
+						<p>
+						Hi,</p>
+						<p>I am Aleksandra Stanojevic. I am 21 years old and from Gornji MIlanovec. I finished high school <q>Knjaz Milos</q> in Gornji Milanovac too. Now I'm studying ICT Faculty of Information and Communication Technologies in Belgrade. I'm studying this because I would like to become a web designer and developer.</p>
+						<p>I love art so I draw in my spare time. If you want to see my works, go down or click on the link <a href="#whatido"><q>My work</q></a> .</p>
+					</div>
+					<div class="picture">
+						<img src="pictures/me.jpg" alt="me"/>
+					</div>
+				</article>
+			</section>
+			<section class="information" id="portfolio">
+				<article class="title1">
+					<h3>My skils</h3>
+				</article>
+				<article class="content">
+					<div class="text">
+						<div class="skils" id="html"><p>HTML</p><p>80%</p></div>
+						<div class="skils" id="css"><p>CSS</p><p>75%</p></div>
+						<div class="skils" id="ps"><p>PHOTOSHOP</p><p>60%</p></div>
+						<div class="skils" id="drawing"><p>DRAWING</p><p>90%</p></div>
+					</div>
+				</article>
+			</section>
+			<section class="information" id="whatido">
+				<article class="title1">
+					<h3>My work</h3>
+				</article>
+				<article class="content">
+					<div class="works">
+						<div class="work">
+							<img src="pictures/nora.jpg" alt="KnjizaraNora"/>
+							<div class="description">
+								<h4 class="titleofpicture">Nora Bookstore</h4>
+								<a href="#">www.knjizaranora.com</a>
+							</div>
+						</div>
+						<div class="work">
+							<img src="pictures/website.jpg" alt="website"/>
+							<div class="description">
+								<h4 class="titleofpicture">Arty</h4>
+								<a href="#">www.arty.com</a>
+							</div>
+						</div>
+						<div class="work">
+							<img src="pictures/website1.jpg" alt="website"/>
+							<div class="description">
+								<h4 class="titleofpicture">Seasoning school</h4>
+								<a href="#">www.seasoningschool.com</a>
+							</div>
+						</div>
+					</div>
+					<div class="works" id="worksend">
+						<div class="work">
+							<img src="pictures/sunflower.jpg" alt="sunflower"/>
+							<div class="description">
+								<h4 class="titleofpicture">Sunflower</h4>
+								<a href="#1" class="button">See this</a>
+							</div>
+						</div>
+						<div class="work">
+							<img src="pictures/angels.jpg" alt="angels"/>	
+							<div class="description">
+								<h4 class="titleofpicture">Angels</h4>
+								<a href="#2" class="button">See this</a>
+							</div>
+						</div>
+						<div class="work">
+							<img src="pictures/kids.jpg" alt="kids"/>
+							<div class="description">
+								<h4 class="titleofpicture">Minnie mouse</h4>
+								<a href="#3" class="button">See this</a>
+							</div>
+						</div>
+					</div>
+					
+					<!--Lightbox!-->
+					
+					<div class="works__lightboxes">
+						<div id="1" class="work__lightbox">
+							<div class="lightbox__content">
+								<a href="#whatido" class="close">x</a>
+								<img src="pictures/sunflower1.jpg" alt="sunflower"/>
+								<h4 class="titleoflightbox">Sunflower</h4>
+								<a href="#3" class="before"><i class="fas fa-angle-left"></i></a>
+								<a href="#2" class="next"><i class="fas fa-angle-right"></i></a>
+							</div>
+						</div>
+						<div id="2" class="work__lightbox">
+							<div class="lightbox__content">
+								<a href="#whatido" class="close">x</a>
+								<img src="pictures/angels1.jpg" alt="angels"/>	
+								<h4 class="titleoflightbox">Angels</h4>
+								<a href="#1" class="before"><i class="fas fa-angle-left"></i></a>
+								<a href="#3" class="next"><i class="fas fa-angle-right"></i></a>
+							</div>
+						</div>
+						<div id="3" class="work__lightbox">
+							<div class="lightbox__content">
+								<a href="#whatido" class="close">x</a>
+								<img src="pictures/kids1.jpg" alt="kids"/>
+								<h4 class="titleoflightbox">Minnie mouse</h4>
+								<a href="#2" class="before"><i class="fas fa-angle-left"></i></a>
+								<a href="#1" class="next"><i class="fas fa-angle-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</article>
+			</section>
+			<section class="information" id="contact">
+				<article class="title1">
+					<h3>Contact</h3>
+				</article>
+				<article class="content">
+					<form method="" action="">										
+						<table>
+							<tbody>
+								<tr>
+									<td><label for="name">Name</label></td>
+									<td><input type="text" id="name" name="name"/></td>
+								</tr>
+								<tr>
+									<td><label for="lastName">Last name</label></td>
+									<td><input type="text" id="lastName" name="lastName"/></td>
+								</tr>
+								<tr>
+									<td><label for="email">E-mail</label></td>
+									<td><input type="email" id="email" name="email"/></td>
+								</tr>
+								<tr>
+									<td><label for="message">Message</label></td>
+									<td rowspan="3"><textarea id="message" name="message"></textarea></td>
+								</tr>
+								<tr>
+									<td colspan="2"><input type="submit" value="Send"/></td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+				</article>
+			</section>
+		</main>
+		<footer>
+			<div>
+				<a href="facebook.com"><i class="fab fa-facebook-f"></i></a>
+				<a href="instagram.com"><i class="fab fa-instagram"></i></a>
+				<a href="twiter.com"><i class="fab fa-twitter"></i></a>
+				<a href="gmail.com"><i class="far fa-envelope"></i></a>
+			</div>
+			<div>
+				<p>Aleksandra Stanojević &copy;</p>
+			</div>
+			<div>
+				<a href="css/style.scss" target="_blank"><i class="fab fa-sass"></i></a>
+				<a href="css/style.css" target="_blank"><i class="fas fa-cog"></i></a>
+				<a href="css/responsive.scss" target="_blank">R<i class="fab fa-sass"></i></a>
+				<a href="css/responsive.css" target="_blank">R<i class="fas fa-cog"></i></a>
+				<a href="sitemap.xml" target="_blank"><i class="fas fa-sitemap"></i></a>
+			</div>
+		</footer>
+	</body>
+</html>
